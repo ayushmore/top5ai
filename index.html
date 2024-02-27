@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top5.ai Draft Simulator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.17/dist/index.min.js"></script>
+</head>
+
+<body>
+
+  <div id="homepage">
+    <h1>top5.ai</h1>
+    <p>Type in a draft topic and let the game begin. May the best drafter win!</p>
+    <input type="text" id="draftTopicInput" placeholder="Enter Draft Topic">
+    <button id="goButton">Go</button>
+  </div>
+
+  <div id="draftPage" style="display: none;">
+    <h1>top5.ai</h1>
+    <div id="topicContainer">
+      <h2 id="draftTitle"></h2>
+    </div>
+    <div class="draftBoardContainer">
+      <div id="board1" class="draftBoard">
+        <h3>Player 1</h3>
+      </div>
+      <div id="board2" class="draftBoard">
+        <h3>Player 2</h3>
+      </div>
+    </div>
+    <input type="text" id="playerInput" placeholder="Enter Draft Item">
+    <button id="submitItem">Submit</button>
+
+    <div id="votingSection" style="display: none;">
+      <h2>Vote for the Winner!</h2>
+      <button id="votePlayer1">Player 1</button>
+      <button id="votePlayer2">Player 2</button>
+    </div>
+
+    <div id="winnerSection" style="display: none;">
+      <canvas id="confettiCanvas"></canvas>
+      <h2 id="winnerAnnouncement"></h2>
+      <button id="playAgain">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

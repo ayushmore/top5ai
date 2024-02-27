@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+    font-weight: 700;
+}
+
+p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+#draftPage h1, #topicContainer h2 {
+    margin-bottom: 20px;
+}
+
+#topicContainer h2 {
+    display: inline-block;
+    border: 2px solid #007bff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #e3f2fd;
+    font-weight: 500;
+}
+
+.draftBoardContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.draftBoard {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 320px; 
+    width: 250px; 
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.draftBoard h3 {
+    margin-bottom: 15px; 
+    font-weight: 500;
+    color: #007bff;
+}
+
+.draftEntry {
+    background-color: #e9f5fe;
+    border: 1px solid #b6dfff;
+    border-radius: 10px;
+    margin: 5px 0; 
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: calc(100% - 20px); 
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#confettiCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+#votingSection, #winnerSection {
+    margin-top: 20px;
+}
